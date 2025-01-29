@@ -1,0 +1,201 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.banner {
+    background: url('https://www.bing.com/th/id/OGC.4328468b6b47dd50dbe20739529009e0?pid=1.7&rurl=https%3a%2f%2fmedia.giphy.com%2fmedia%2fKyQxJKQrSsXF6%2fgiphy.gif&ehk=IGzSS%2bIjrq%2bqZDuilTd0ekGIKMnkLshnQF3xNU%2fnpnU%3d') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.banner-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ff5722;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+.featured-products {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.products-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.product p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.testimonials {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a {
+    color: #ff5722;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .products-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 300px;
+    }
+
+    .banner-content h2 {
+        font-size: 24px;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .product {
+        width: 90%;
+    }
+}
